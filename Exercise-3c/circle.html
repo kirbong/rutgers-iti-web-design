@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<!-- Part 5: "Write a program to calculate the area of a circle." -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circle</title>
+    <script type = "text/javascript">
+ 
+        var diameter; // defining diameter of circle to be used to calculate radius
+        var numberDiameter; // to convert diameter string to an integer
+        var area; // result
+
+        diameter = window.prompt("What is the diameter of the rectangle (length across)? "); // user input
+
+        numberDiameter = parseInt(diameter); // converting diameter string to integer
+
+        area = Math.pow((numberDiameter/2), 2) * Math.PI; // dividing diameter by 2, multiplying radius by the power of 2, then multiplying by pi
+
+        // a = Pi x r^2
+        document.writeln("<h1>The area of the circle is " + area + " inches</h1>") // final area of the circle
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

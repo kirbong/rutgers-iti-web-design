@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<!-- Part 3: "Write to program to calculate the salary of an employee." -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salary</title>
+    <script type = "text/javascript">
+
+        var wage; //defining user input of hourly wage
+        var hours; // defining user input of hours worked per week
+        var numberWage; // first user entered number
+        var numberHours; // second user entered number
+        var salary; // final calculated salary variable
+
+        // read in numbers from users as a string
+        wage = window.prompt("Please enter your hourly wage" );
+        hours = window.prompt("Please enter average hours worked weekly" );
+
+        // converting strings to integers
+        numberWage = parseInt( wage );
+        numberHours = parseInt( hours );
+
+        salary = wage * hours * 50; // calculating salary. 50 = working weeks per year
+
+        // displaying the results
+        document.writeln( "<h1> Your approximate yearly salary is $" + salary + "</h1>")
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
