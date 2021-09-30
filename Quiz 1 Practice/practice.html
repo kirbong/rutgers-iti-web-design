@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<!-- Quiz 1 Practice -->
+<!-- Write a program to convert Canadian dollars to Indian rupees. The user will input the amount of Canadian dollars and the program will calculate and display the amount of equivalent Indian rupees. -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz 1 Practice</title>
+    <script>
+        
+        var rupees; // Indian_rupees = 60 * Canadian_dollar
+        var CAD; // Canadian dollars input
+        var numberCAD; // integer of Canadian dollars
+
+        CAD = window.prompt("Please enter the amount in CAD that you would like to convert: ");
+
+        numberCAD = parseInt( CAD );
+
+        rupees = 60 * numberCAD;
+
+        document.writeln( "<h1> C$" + numberCAD + " is equal to ₹" + rupees + "</h1>")
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
