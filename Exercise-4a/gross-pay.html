@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<!-- Part 4: Develop a JavaScript application that will determine the gross pay for each of five employees. The company pays straight time for the first 40 hours worked by each employee and time and a half for all hours worked in excess of 40 hours. You should input the number of hours each employee worked last week and the hourly rate of each employee. Your program should input this information for each employee and should determine and display the employee’s gross pay. -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gross Pay Calculation</title>
+    <script>
+        var wage; //defining user input of hourly wage
+        var hours; // defining user input of hours worked per week
+        var numberWage; // first user entered number
+        var numberHours; // second user entered number
+        var salary; // final calculated salary variable
+        var inputCounter;
+
+        inputCounter = 1;
+        salary = 0;
+
+        while ( inputCounter <= 5 )
+        {
+            wage = window.prompt("Please enter your hourly wage", "0" );
+            hours = window.prompt("Please enter average hours worked weekly", "0" );
+
+            numberWage = parseInt( wage );
+            numberHours = parseInt( hours );
+
+            if ( numberHours > 40 )
+            {
+                salary = ((numberWage * numberHours) + (numberWage * (numberHours + (numberWage/2)))) * 51; // calculating salary. 51 = working weeks per year
+                document.writeln("<h1>Your gross pay is " + salary + "</h1>");
+            }
+
+            else
+            {
+                salary = numberWage * numberHours * 51;
+                document.writeln("<h1>Your gross pay is " + salary + "</h1>");
+            }
+
+            inputCounter = inputCounter + 1;
+        }
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

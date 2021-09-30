@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<!-- Part 5: Write a program to find the larger of 2 numbers and print it on the screen. The user should input the two numbers -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Which Number is Larger?</title>
+    <script>
+        var num1;
+        var num2;
+        var numOne;
+        var numTwo;
+
+        num1 = window.prompt("Enter the first number:");
+        num2 = window.prompt("Enter the second number:");
+
+        numOne = parseInt( num1 );
+        numTwo = parseInt( num2 );
+
+        if ( numOne > numTwo )
+        {
+            document.writeln("<h1>" + numOne + " is larger than " + numTwo + "</h1>");
+        }
+
+        else if ( numTwo > numOne )
+        {
+            document.writeln("<h1>" + numTwo + " is larger than " + numOne + "</h1>");
+        }
+
+        else 
+        { 
+            document.writeln("<h1>" + numOne + " is equal to " + numTwo + "</h1>");
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
