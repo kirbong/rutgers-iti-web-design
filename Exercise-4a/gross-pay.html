@@ -8,34 +8,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gross Pay Calculation</title>
     <script>
+        // this one was hard
+
         var wage; //defining user input of hourly wage
         var hours; // defining user input of hours worked per week
         var numberWage; // first user entered number
         var numberHours; // second user entered number
         var salary; // final calculated salary variable
-        var inputCounter;
+        var inputCounter; // amount of inputs allowed
 
-        inputCounter = 1;
+        inputCounter = 1; // start inputCounter loop
         salary = 0;
 
-        while ( inputCounter <= 5 )
+        while ( inputCounter <= 5 ) // 5 user inputs allowed
         {
-            wage = window.prompt("Please enter your hourly wage", "0" );
-            hours = window.prompt("Please enter average hours worked weekly", "0" );
+            wage = window.prompt("Please enter your hourly wage", "0" ); // hourly wage input
+            hours = window.prompt("Please enter average hours worked weekly", "0" ); // average hours worked weekly input
 
-            numberWage = parseInt( wage );
+            numberWage = parseInt( wage ); 
             numberHours = parseInt( hours );
 
-            if ( numberHours > 40 )
+            if ( numberHours > 40 ) // for overtime hours
             {
-                salary = ((numberWage * numberHours) + (numberWage * (numberHours + (numberWage/2)))) * 51; // calculating salary. 51 = working weeks per year
-                document.writeln("<h1>Your gross pay is " + salary + "</h1>");
+                salary = ((numberWage * numberHours) + (numberWage * (numberHours + (numberWage/2)))) * 51; // time and a half
+                document.writeln("<h1>Your gross pay is " + salary + "</h1>"); // writes in every calculation
             }
 
-            else
+            else // if there isn't overtime
             {
-                salary = numberWage * numberHours * 51;
-                document.writeln("<h1>Your gross pay is " + salary + "</h1>");
+                salary = numberWage * numberHours * 51; // 51 working weeks per year
+                document.writeln("<h1>Your gross pay is " + salary + "</h1>"); // writes in every calculation
             }
 
             inputCounter = inputCounter + 1;

@@ -8,10 +8,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Which Number is Larger?</title>
     <script>
-        var num1;
-        var num2;
-        var numOne;
-        var numTwo;
+        var num1; // first number input
+        var num2; // second number input
+        var numOne; // integer 1
+        var numTwo; // integer 2
 
         num1 = window.prompt("Enter the first number:");
         num2 = window.prompt("Enter the second number:");
@@ -19,17 +19,17 @@
         numOne = parseInt( num1 );
         numTwo = parseInt( num2 );
 
-        if ( numOne > numTwo )
+        if ( numOne > numTwo ) // if number 1 is larger
         {
             document.writeln("<h1>" + numOne + " is larger than " + numTwo + "</h1>");
         }
 
-        else if ( numTwo > numOne )
+        else if ( numTwo > numOne ) // if number 2 is larger
         {
             document.writeln("<h1>" + numTwo + " is larger than " + numOne + "</h1>");
         }
 
-        else 
+        else // if both numbers are the same
         { 
             document.writeln("<h1>" + numOne + " is equal to " + numTwo + "</h1>");
         }

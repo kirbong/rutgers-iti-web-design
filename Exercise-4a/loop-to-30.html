@@ -8,16 +8,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sum of Numbers Between 1 - 30</title>
     <script>
-        var num;
-        var total; 
+        var num; // the number 0
+        var total; // total sum
 
-        num = 0;
+        num = 0; // can start with 0 or 1, either works
         total = 0;
 
-        while ( num <= 30 )
+        while ( num <= 30 ) // 30 numbers from 1 - 30
         {
-            total += num;
-            num += 1;
+            total += num; // total + num
+            num++; // iterate num by 1
         }
 
         document.writeln( "<h1>The total is " + total + "</h1>" );
